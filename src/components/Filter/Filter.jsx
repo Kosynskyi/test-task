@@ -29,7 +29,6 @@ export const Filter = () => {
 
   const handleChange = e => {
     if (Number(e.target.value) < 1 && e.target.value !== '') {
-      console.log(e.target.value);
       toast.error('id cannot be less then 1 :( please, try again');
       setSearchParams({ query: filter });
     } else if (Number(e.target.value) > totalProducts) {
